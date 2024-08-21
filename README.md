@@ -1,5 +1,5 @@
 # coatlessali's Sonic The Fighters Releases
-Welcome to my mods repo! Most of these can be applied as BPS patches to existing game files. These all assume you have extracted `rom.psarc` previously, either manually or by installing Sonic the Fighters: Community Edition.
+Welcome to my mods & tools repo! Most of the mods can be applied as BPS patches to existing game files. These all assume you have extracted `rom.psarc` previously, either manually or by installing Sonic the Fighters: Community Edition.
 
 ## fixheader.py
 This tool fixes your DDS headers so that the game can read them correctly.
