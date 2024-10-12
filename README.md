@@ -4,6 +4,9 @@ Welcome to my mods & tools repo! Most of the mods can be applied as BPS patches 
 ## fixheader.py
 This tool fixes your DDS headers so that the game can read them correctly.
 
+## farcpack
+This is a bash wrapper for the MikuMikuLibrary utility FarcPack. It requires mono to be installed, and for the real farcpack tool to be downloaded and extracted somewhere. **You must edit the script and change the FARCPACK variable to reflect the location of your farcpack.exe.**
+
 ## Sonic The Fighers: Dark Theme
 This mod replaces all of the UI with glassy black variants where applicable.
 ![image](https://github.com/user-attachments/assets/9a635195-2564-4ecc-930c-abdfeda0bd60)
