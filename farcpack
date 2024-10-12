@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# REPLACE THIS WITH YOUR FARCPACK EXE
+FARCPACK=/home/ali/Games/FarcPack/FarcPack.exe
+
+# This handles a weird mono bug.
+if [[ -d "$1" ]]; then
+	if [[ -d "$1.farc" ]]; then
+		rm -r "$1.farc"
+	fi
+	touch "$1.farc"
+fi
+
+# Syntax is `farcpack <dir>` or `farcpack <.farc>`
+mono $FARCPACK "$1"
