@@ -1,7 +1,9 @@
 #!/bin/bash
 
+type mono >/dev/null 2>&1 || { echo >&2 "Mono was not found in your PATH. Please install it with your system's package manager. Alternatively, you may use Homebrew if your system does not have traditional package management available."; exit 1; }
+
 # REPLACE THIS WITH YOUR FARCPACK EXE
-FARCPACK=/home/ali/Games/FarcPack/FarcPack.exe
+FARCPACK=/home/$USER/Games/FarcPack/FarcPack.exe
 
 # This handles a weird mono bug.
 if [[ -d "$1" ]]; then
@@ -12,4 +14,4 @@ if [[ -d "$1" ]]; then
 fi
 
 # Syntax is `farcpack <dir>` or `farcpack <.farc>`
-mono $FARCPACK "$1"
+mono "$FARCPACK" "$1"
